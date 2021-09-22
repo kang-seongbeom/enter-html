@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>과제2</title>
+    <style>
+        section table {
+            width: 100%;
+            border: 1px solid #000000;
+        }
+        section th, td {
+            border: 1px solid #000000;
+        }
+        thead th{
+            font-size: 120%;
+        }
+        tbody img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        tbody .command{
+            text-align: center;
+            font-family: "Bell MT";
+        }
+        tbody .explanation{
+            list-style-type: square;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Intellij 15가지 중요 키</h1>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <th>Command</th>
+                <th>설명</th>
+                <th>화면</th>
+                <th>Command</th>
+                <th>설명</th>
+                <th>화면</th>
+                <th>Command</th>
+                <th>설명</th>
+                <th>화면</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3 class="command">[Alt + Enter]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>에러를 수정할 수 있다.</li>
+                                <li>경고 및 오류코드 위에 커서를 한 뒤, [Alt + Enter]를 통해 경고 및 오류를 수정할 수 있다.</li>
+                                <li>더 짧은 코드로 바꿔준다.</li>
+                            </ul>
+                        </h4
+                        >
+                    </td>
+                    <td><img src="assignment4-image/1.png"></td>
+
+                    <td>
+                        <h3 class="command">[F2]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>오류, 경고, 제안으로 이동</li>
+                                <li>[F2]로 이동을 하고, [Alt + Enter]로 코드 수정 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/2.png"></td>
+
+                    <td>
+                        <h3 class="command">[⌘1]<br/>[Alt + 1]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>프로젝트 창 열기 및 초점 이동</li>
+                                <li>방향키로 초점 이동</li>
+                                <li>타이핑을 통한 검색 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/3.png"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="command">[Esc]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>프로젝트 창에서 editor로 초점 이동</li>
+                                <li>변경사항을 저장하기 않고 저장</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/4.png"></td>
+
+                    <td>
+                        <h3 class="command">[⌘E]<br/>[Ctrl + E]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>가장 최근에 열었던 파일 확인 가능</li>
+                                <li>방향키로 파일 탐색 가능</li>
+                                <li>키보드 단축키가 없는 도구창을 열 수도 있다.</li>
+                                <li>키워드를 통해 특정 항목 검색 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/5.png"></td>
+
+                    <td>
+                        <h3 class="command">[⌘B]<br/>[Ctrl + B]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>심볼이 선언된 위치로 이동</li>
+                                <li>[⌥+⌘+B] / [Ctrl+Alt+B]로 구현탐색 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/6.png"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="command">[Alt + F7]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>해당 심볼이 사용되는 모든 위치 표시</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/7.png"></td>
+
+                    <td>
+                        <h3 class="command">[Ctrl twice]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>Run Anything창으로 어떤 것이든 실행가능</li>
+                                <li>default로 가장 최근에 실행한 실행 구성이 목록에 표시됨</li>
+                                <li>실행할 항목의 이름 입력 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/8.png"></td>
+
+                    <td>
+                        <h3 class="command">[⌥&uarr; / ⌥&darr;]<br/>[Ctrl + w]/<br/>[Shift + Ctrl + w]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>[⌥&uarr;] / [Ctrl + w]커서 주변의 코드 선택 단어 단위로 섹션 확장 가능</li>
+                                <li>[⌥&darr;] / [Shift + Ctrl + w] 축소</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/9.png"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="command">[⌘/]<br/>[Ctrl + /]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>커서 문장 주서처리</li>
+                                <li>주석 문장에 사용시 주석 해제</li>
+                                <li>[⌥+⌘+/] / [Shift+Ctrl+/] 선택 블록 전체 주석</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/10.png"></td>
+
+                    <td>
+                        <h3 class="command">[&#8679;⌘&#8626;]<br/>[Shift + Ctrl + Enter]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>사용시 세미콜론 추가 가능</li>
+                                <li>중괄호 추가 및 적정 위치에 커서 위치</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/11.png"></td>
+
+                    <td>
+                        <h3 class="command">[⌥⌘L]<br/>[Ctrl + Alt + L]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>현재 파일의 서식을 프로젝트 표준에 맞춰 정렬</li>
+                                <li>[⌥⌘+Shift+L] / [Shift+Ctrl+Alt+L] 옵션선택 가능</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/12.png"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="command">[^T]<br/>[Shift + Ctrl + Alt + T]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>모든 리팩토링 옵션 표시</li>
+                                <li>방향키와 엔터로 옵션 선택</li>
+                                <li>단축키가 존재할 경우 단축키 역시 표시</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/13.png"></td>
+
+                    <td>
+                        <h3 class="command">[&uarr;⌘A]<br/>[Shift + Ctrl + A]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>모든 액션 검색</li>
+                                <li>단축키 역시 표시</li>
+                                <li>액션 및 설정 변경 가능</li>
+                                <li>도구창 검색 및 열기 지원</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/14.png"></td>
+
+                    <td>
+                        <h3 class="command">[Shift twice]</h3>
+                    </td>
+                    <td>
+                        <h4>
+                            <ul class = "explanation">
+                                <li>모든 것을 검색</li>
+                                <li>설정 변경 가능</li>
+                                <li>기본적으로 최근 파일을 표시하므로 [Ctrl+E]대체 가능</li>
+                                <li>클래스, 파일, 심볼 및 액션 검색 결과 모두 표시</li>
+                                <li>명령어 지원</li>
+                            </ul>
+                        </h4>
+                    </td>
+                    <td><img src="assignment4-image/15.png"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer></footer>
+</body>
+</html>

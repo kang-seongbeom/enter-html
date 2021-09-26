@@ -1,0 +1,26 @@
+section table {
+    width: 100%;
+    border: 1px solid #000000;
+}
+section th, td {
+    border: 1px solid #000000;
+}
+thead th{
+    font-size: 120%;
+}
+tbody img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+tbody .command{
+    text-align: center;
+    font-family: "Bell MT";
+}
+tbody .explanation{
+    list-style-type: square;
+}
+tbody tr:nth-child(even) {
+    background-color: #000000;
+    color: #ffffff;
+}

@@ -10,6 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../assignment4/assignment4.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1yUOptOHuN45IINF4LMqmfe0hYM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assignment4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632302885809</updated>
       <workItem from="1632302887288" duration="5199000" />
+      <workItem from="1632634444356" duration="47000" />
     </task>
     <servers />
   </component>

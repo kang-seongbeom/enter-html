@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>practice2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 5px 5px 5px 5px;
+            background: orange;
+            justify-content: space-between;
+        }
+        div span{
+            color: #fff;
+            margin-top: 13px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .text-hello{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
+    <header></header>
+    <main>
+        <section>
+            <div class="box">
+                <span class="text-hello">Hello Dialog</span>
+                <span class="text-x">&times;</span>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>

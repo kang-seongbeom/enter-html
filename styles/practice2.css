@@ -10,15 +10,17 @@
     margin: 10px;
     border-radius: 5px 5px 5px 5px;
     background: orange;
-    justify-content: space-between;
 }
 div span{
     color: #fff;
-    margin-top: 13px;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 1.2em;
 }
 .text-hello{
-    font-size: 1.2em;
+    margin-top: 13px;
     font-weight: bold;
+}
+.text-x{
+    align-self: center;
 }

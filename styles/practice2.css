@@ -11,7 +11,7 @@
     border-radius: 5px 5px 5px 5px;
     background: orange;
 }
-div span{
+div > span{
     color: #fff;
     margin-left: 20px;
     margin-right: 20px;

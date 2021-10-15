@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #reason {
+            width: 500px;
+            height: 200px;
+        }
+        #motive{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
+<header></header>
+<main>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <h4>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 많은 경험이 있는분을 찾습니다.</h4>
+    <hr/>
+    <section>
+        <div id="wrap">
+            <h3>개인정보</h3>
+            <ul>
+                <li>
+                    이름
+                    <input type="text">
+                </li>
+                <li>
+                    연락처
+                    <input type="text">
+                </li>
+                <li>
+                    학과
+                    <select name="major">
+                        <option value="computer-engineer">컴퓨터공학과</option>
+                    </select>
+                </li>
+            </ul>
 
+            <h3>지원분야</h3>
+            <ul>
+                <form>
+                    <li><input type="radio" name="field"/>웹 퍼블리싱</li>
+                    <li><input type="radio" name="field"/>웹 어플리케이션</li>
+                    <li><input type="radio" name="field"/>웹 개발 지원</li>
+                </form>
+            </ul>
+
+            <div id="motive">
+                <h3>지원동기</h3>
+                <input id="reason" type="text" placeholder="지원동기를 작성해주세요.">
+
+                <span>
+                    <button>접수하기</button>
+                    <button>다시작성</button>
+                </span>
+            </div>
+        </div>
+    </section>
+</main>
+<footer></footer>
 </body>
 </html>

@@ -1,0 +1,9 @@
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}

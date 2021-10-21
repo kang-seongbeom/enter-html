@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.list{
+    margin-bottom: 15px;
+}
+p{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul{
+    list-style: circle;
+}
+
+li{
+    margin-left: 40px;
+    padding: 2px;
+}
+
+a{
+    text-decoration: none;
+}

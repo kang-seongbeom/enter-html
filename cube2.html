@@ -43,6 +43,7 @@
             /*transition: 2s;*/
             animation: ani 5s linear infinite;
         }
+
         @keyframes ani {
             0% {
                 transform: rotateY(0deg) rotateX(0deg);
@@ -51,9 +52,11 @@
                 transform: rotateX(1turn) rotateY(1turn);
             }
         }
+
         .wrapper:hover {
             transform: rotateX(-60deg) rotateY(60deg);
         }
+
         .wrapper div {
             width: 100%;
             height: 100%;
@@ -68,10 +71,12 @@
             font-weight: 800;
             letter-spacing: .2em;
         }
+
         .wrapper .top, .wrapper .bottom {
             width: 300px;
             height: 100px;
         }
+
         .wrapper .left, .wrapper .right {
             width: 100px;
             height: 200px;
@@ -81,22 +86,27 @@
             transform: rotateX(90deg) translateZ(100px);
             background-color: var(--color2);
         }
+
         .wrapper .bottom {
             transform: rotateX(-90deg) translateZ(100px);
             background-color: var(--color3);
         }
+
         .wrapper .left {
             transform: rotateY(-90deg) translateZ(150px);
             background-color: var(--color4);
         }
+
         .wrapper .right {
             transform: rotateY(90deg) translateZ(150px);
             background-color: var(--color5);
         }
+
         .wrapper .front {
             transform: translateZ(50px);
             background-color: var(--color6);
         }
+
         .wrapper .back {
             transform: rotateY(0.5turn) translateZ(50px);
             background-color: var(--color7);

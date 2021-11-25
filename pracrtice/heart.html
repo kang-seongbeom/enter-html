@@ -42,22 +42,34 @@
             stroke-dashoffset: 54;
             transition: 2s;
             fill: var(--color1);
+            stroke-width: 1;
         }
 
         .wrapper path.like {
-            animation: like 1s linear forwards;
+            animation: like 1s linear forwards,
+            heart-beat 0.5s ease-in-out 1s 2;
+            transform-origin: center;
         }
 
-        @keyframes like {
-            0% {
+        @keyframes heart-beat {
+            0%,100% {
                 transform: scale(1);
             }
             50% {
                 transform: scale(0.9);
             }
-            75% {
-                fill: var(--color1);
-            }
+        }
+
+        @keyframes like {
+            /*0% {*/
+            /*    transform: scale(1);*/
+            /*}*/
+            /*50% {*/
+            /*    transform: scale(0.9);*/
+            /*}*/
+            /*75% {*/
+            /*    fill: var(--color1);*/
+            /*}*/
             100% {
                 stroke-dashoffset: 0;
                 stroke: var(--color5);

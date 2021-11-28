@@ -4,72 +4,41 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        body {
-            margin:0 40px;
-        }
         body > div {
-            width: 800px;
-            margin: 0 auto;
-        }
-
-        body > div > div {
-            background: #ddd;
-            width: 360px;
-            height: 350px;
-            border: 1px solid #999;
-            margin-top: 80px;
-            float: left;
-        }
-        .perspective{
+            width: 500px;
+            margin: 50px auto;
+            position: relative;
             perspective: 500px;
-            margin-right: 70px;
-        }
-        .perspective div{
-            width: 100px;
-            height: 100px;
-            background-color: #333;
-            transform: rotateX(45deg);
-            float: left;
-            margin-right: 20px;
-        }
-        .no-perspective div{
-            width: 100px;
-            height: 100px;
-            background-color: #333;
-            transform: perspective(500px) rotateX(45deg);
-            float: left;
-            margin-right: 20px;
-        }
-        p {
-            padding: 10px 15px;
-            font-size: 1em;
         }
 
+        div div {
+            background: #0cb3ee;;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            transition: 1s;
+        }
+
+        div:target{
+            transform: translateZ(-600px);
+        }
+
+        a {
+            font: 1em arial;
+            text-decoration: none;
+            border-radius:5px ;
+            border: 1px solid #000;
+            padding: 5px;
+            color: #fff;
+            background: #000;
+        }
     </style>
 </head>
 <body>
 <div>
-
-    <div class="perspective">
-        <p>perspective: 500px; 컨테이너(부모)에 원근감을 설정</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <a href="#translate">z축 따른 translate 150px 이동을 위해 클릭하세요.</a> <br /> <br /> <a href="#reset">초기화</a>
+    <div id="translate">
     </div>
-
-    <div class="no-perspective">
-        <p>perspective(500px), 각각 대상 요소에 원근감을 설정</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
 </div>
 </body>
 </html>

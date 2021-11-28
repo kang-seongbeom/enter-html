@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 40px;
+            width: 600px;
+        }
+
+        .wrapper {
+            display: inline-block;
+            text-align: center;
+            margin-right: 117px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .box-01 {
+            width: 100%;
+            height: 100%;
+            background: #0cb3ee;
+        }
+
+        .box-02 {
+            width: 100%;
+            height: 100%;
+            background: #0cb3ee;
+            transform: rotateX(45deg);
+        }
+
+        .perspective {
+            display: block;
+            margin: 0 auto;
+            /* 관찰자 시점을 설정 */
+            transform-style: preserve-3d;
+            perspective: 300px;
+            transform: rotateY(-45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 기본 박스 -->
+    <p>기본 박스</p>
+    <div class="box-01"></div>
+</div>
+
+<div class="wrapper">
+    <!-- x축을 회전한 박스 -->
+    <p>x축 45도 회전한 박스</p>
+    <div class="box-02"></div>
+</div>
+<br/><br/><br/><br/><br/>
+<!-- 투영점을 반영한 박스 -->
+<div class="wrapper perspective">
+    <!-- x축을 회전한 박스 -->
+    <p>x축 45도 회전한 박스에 투영점 설정</p>
+    <div class="box-02"></div>
+</div>
+</body>
+</html>

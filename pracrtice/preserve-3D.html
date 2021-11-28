@@ -4,45 +4,105 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #wrap {
-            width: 800px;
-            margin: 180px auto;
-        }
-        .outer {
-            width: 400px;
-            margin: 40px auto;
-            background: #c7c7c7;
-            transform-style:preserve-3d;
-            perspective: 600px;
+        :root {
+            --color1: #CCCCFF55;
+            --color2: #6495ED55;
+            --color3: #40E0D055;
+            --color4: #9FE2BF55;
+            --color5: #DE316355;
+            --color6: #FF7F5055;
+            --color7: #FFBF0055;
         }
 
-        .target {
-            width: 150px;
-            height: 150px;
-            background: #0cb3ee;
-            transition: 1s;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        #target:target {
-            transform: rotate(45deg) translateZ(200px);
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
         }
-        a {
-            font-size: .8em;
-            text-decoration: none;
-            border-radius:5px ;
-            border: 1px solid #000;
-            padding: 2px 5px;
+
+        .wrapper{
+            margin-top: 300px;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            animation: ani 5s linear infinite;
+        }
+
+        @keyframes ani {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform: rotateX(1turn) rotateY(1turn);
+            }
+        }
+
+        .wrapper div{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color1);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #fff;
-            background: #000;
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: .2em;
         }
+
+        .wrapper .top{
+            transform: rotateX(90deg) translateZ(150px);
+            background-color: var(--color2);
+        }
+
+        .wrapper .bottom{
+            transform: rotateX(-90deg) translateZ(150px);
+            background-color: var(--color3);
+        }
+
+        .wrapper .right{
+            transform: rotateY(90deg) translateZ(150px);
+            background-color: var(--color4);
+        }
+
+        .wrapper .left{
+            transform: rotateY(-90deg) translateZ(150px);
+            background-color: var(--color5);
+        }
+
+        .wrapper .back{
+            transform: translateZ(-150px);
+            background-color: var(--color5);
+        }
+
+        .wrapper .front{
+            transform: translateZ(150px);
+            background-color: var(--color6);
+        }
+
     </style>
 </head>
 <body>
-<div id="wrap">
-    <div class="outer">
-        <p>부모 영역 <a href="#target">2D 효과 클릭</a> | <a href="#reset">초기화</a></p>
-        <div class="target" id="target"></div>
-    </div>
+<div class="wrapper">
+    <div class="back">back</div>
+    <div class="front">front</div>
+    <div class="top">top</div>
+    <div class="bottom">bottom</div>
+    <div class="right">right</div>
+    <div class="left">left</div>
 </div>
 </body>
 </html>

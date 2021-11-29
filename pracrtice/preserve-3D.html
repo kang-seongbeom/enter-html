@@ -27,7 +27,7 @@
             perspective: 1000px;
         }
 
-        .wrapper{
+        .wrapper {
             margin-top: 300px;
             width: 100px;
             height: 300px;
@@ -38,23 +38,25 @@
             transform-style: preserve-3d;
             animation: ani 5s linear infinite;
         }
-        .wrapper .bottom{
+
+        .wrapper .bottom {
             height: 100px;
         }
-        .wrapper .top{
+
+        .wrapper .top {
             height: 100px;
         }
 
         @keyframes ani {
             0%{
-                transform: rotateX(0deg) rotateY(0deg);
+                transform: rotateX(40deg) rotateY(40deg);
             }
             100%{
-                transform: rotateX(1turn) rotateY(1turn);
+                /*transform: rotateX(1turn) rotateY(1turn);*/
             }
         }
 
-        .wrapper div{
+        .wrapper div {
             width: 100%;
             height: 100%;
             background-color: var(--color1);
@@ -69,46 +71,71 @@
             letter-spacing: .2em;
         }
 
-        .wrapper .top{
+        .wrapper .top {
             transform: rotateX(90deg) translateZ(150px);
             background-color: var(--color2);
         }
 
-        .wrapper .bottom{
+        .wrapper .bottom {
             transform: rotateX(-90deg) translateZ(150px);
             background-color: var(--color3);
         }
 
-        .wrapper .right{
-            transform: rotateY(90deg) translateZ(50px);
+        .wrapper .right {
+            transform: rotateY(90deg) translateZ(138px) translateX(47px);
             background-color: var(--color4);
         }
 
-        .wrapper .left{
-            transform: rotateY(-90deg) translateZ(50px);
+        .wrapper .left {
+            transform: rotateY(-90deg) translateZ(138px) translateX(-47px);
             background-color: var(--color5);
         }
 
-        .wrapper .back{
+        .wrapper .back {
             transform: translateZ(-50px);
             background-color: var(--color5);
         }
 
-        .wrapper .front{
+        .wrapper .back-l {
+            transform: rotateY(-120deg) translateZ(168px) translateX(-65px);
+            background-color: var(--color5);
+        }
+
+        .wrapper .back-r {
+            transform: rotateY(120deg) translateZ(168px) translateX(65px);
+            background-color: var(--color5);
+        }
+
+        .wrapper .front {
             transform: translateZ(50px);
             background-color: var(--color6);
         }
+
+        .wrapper .front-r {
+            transform: rotateY(30deg) translateZ(70px) translateX(67px);
+            background-color: var(--color7);
+        }
+
+        .wrapper .front-l {
+            transform: rotateY(-30deg) translateZ(70px) translateX(-67px);
+            background-color: var(--color7);
+        }
+
 
     </style>
 </head>
 <body>
 <div class="wrapper">
-    <div class="back">back</div>
     <div class="front">front</div>
-    <div class="top">top</div>
-    <div class="bottom">bottom</div>
+    <div class="front-r">front-r</div>
+    <div class="front-l">front-l</div>
     <div class="right">right</div>
     <div class="left">left</div>
+    <div class="back">back</div>
+    <div class="back-l">back-l</div>
+    <div class="back-r">back-r</div>
+    <!--    <div class="top">top</div>-->
+    <!--    <div class="bottom">bottom</div>-->
 </div>
 </body>
 </html>

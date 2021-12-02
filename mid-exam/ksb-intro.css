@@ -30,3 +30,15 @@ li{
   font-family:"돋움", "굴림";
   font-size: 1.2em;
 }
+
+#github {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+#github:hover {
+  -webkit-filter: invert(70%);
+  filter: invert(70%);
+}

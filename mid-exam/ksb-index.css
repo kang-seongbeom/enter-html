@@ -1,6 +1,17 @@
+:root {
+    --color1: #CCCCFF55;
+    --color2: #6495ED55;
+    --color3: #40E0D055;
+    --color4: #9FE2BF55;
+    --color5: #DE316355;
+    --color6: #FF7F5055;
+    --color7: #FFBF0055;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {

@@ -16,8 +16,8 @@
 }
 
 body {
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     -ms-overflow-style: none;
     overflow: hidden;
     background-color: #dcdcdc;
@@ -32,8 +32,8 @@ body::-webkit-scrollbar {
 }
 
 #wrap {
-    width: 98%;
-    height: 98%;
+    width: 99%;
+    height: 99%;
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -50,15 +50,15 @@ body::-webkit-scrollbar {
 }
 
 @keyframes nav-slide-UtD {
-    from{
+    from {
         height: 0;
     }
-    to{
+    to {
         height: 99%;
     }
 }
 
-#nav-box{
+#nav-box {
     height: 99%;
     display: flex;
     flex-direction: column;
@@ -73,27 +73,61 @@ body::-webkit-scrollbar {
 }
 
 @keyframes content-slide-LtR {
-    from{
+    from {
         width: 0;
     }
-    to{
+    to {
         width: 79%;
     }
 }
 
-#profile{
+#profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+    margin: 8px;
+    position: relative;
+}
+
 #me {
     width: 120px;
     height: 120px;
     border-radius: 30%;
-    display: flex;
-    margin: 8px;
+    position: relative;
+}
+
+#me-2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#picture:hover #me-2 {
+    display: block;
+}
+
+#picture:hover {
+    animation: hit 1s infinite;
+}
+
+@keyframes hit {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
 }
 
 svg path {
@@ -182,12 +216,12 @@ a {
         flex-direction: row;
         animation: nav-slide-LtR 1.0s linear forwards;
     }
+
     @keyframes nav-slide-LtR {
-        from{
+        from {
             width: 0;
         }
-        to
-        {
+        to {
             width: 99%;
         }
     }
@@ -200,10 +234,10 @@ a {
     }
 
     @keyframes content-slide-UtD {
-        from{
+        from {
             height: 0;
         }
-        to{
+        to {
             height: 99%;
         }
     }

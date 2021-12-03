@@ -6,6 +6,7 @@
     --color5: #DE316355;
     --color6: #FF7F5055;
     --color7: #FFBF0055;
+    --color8: #000;
 }
 
 * {
@@ -41,10 +42,20 @@ body::-webkit-scrollbar {
 #nav {
     background-color: white;
     width: 20%;
-    height: 99%;
+    height: 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    animation: nav-slide-UtD 1.0s linear forwards;
+}
+
+@keyframes nav-slide-UtD {
+    from{
+        height: 0;
+    }
+    to{
+        height: 99%;
+    }
 }
 
 #nav-box{
@@ -55,8 +66,19 @@ body::-webkit-scrollbar {
 }
 
 #content {
-    width: 79%;
+    width: 0;
     height: 99%;
+    animation: content-slide-LtR 1.0s linear forwards;
+    animation-delay: 1.0s;
+}
+
+@keyframes content-slide-LtR {
+    from{
+        width: 0;
+    }
+    to{
+        width: 79%;
+    }
 }
 
 #profile{
@@ -75,9 +97,8 @@ body::-webkit-scrollbar {
 }
 
 svg path {
-    stroke: var(--color3);
-    stroke-width: 5;
-    animation: title 1.5s linear forwards;
+    stroke: var(--color8);
+    animation: title 1.0s linear forwards;
 }
 
 @keyframes title {
@@ -155,14 +176,36 @@ a {
     }
 
     #nav {
-        width: 99%;
+        width: 0;
         height: 220px;
         min-height: 150px;
         flex-direction: row;
+        animation: nav-slide-LtR 1.0s linear forwards;
+    }
+    @keyframes nav-slide-LtR {
+        from{
+            width: 0;
+        }
+        to
+        {
+            width: 99%;
+        }
     }
 
     #content {
         width: 99%;
+        height: 0;
+        animation: content-slide-UtD 1.0s linear forwards;
+        animation-delay: 1.0s;
+    }
+
+    @keyframes content-slide-UtD {
+        from{
+            height: 0;
+        }
+        to{
+            height: 99%;
+        }
     }
 }
 

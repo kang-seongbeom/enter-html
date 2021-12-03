@@ -31,6 +31,10 @@ li {
     font-size: 1.2em;
 }
 
+#contact li{
+    margin-bottom: 15px;
+}
+
 .title {
     height: 50px;
     width: auto;

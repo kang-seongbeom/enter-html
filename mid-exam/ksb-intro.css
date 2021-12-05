@@ -35,29 +35,6 @@ li {
     margin-bottom: 15px;
 }
 
-.title {
-    height: 50px;
-    width: auto;
-    overflow: hidden;
-}
-
-.up-box {
-    top: 100%;
-    position: relative;
-    height: 100%;
-    animation: up 1s linear forwards;
-    animation-delay: 2s;
-}
-
-@keyframes up {
-    from {
-        top: 100%;
-    }
-    to {
-        top: 0;
-    }
-}
-
 #github {
     width: 25px;
     height: 25px;

@@ -28,7 +28,7 @@
             perspective: 1000px;
         }
 
-        .wrapper {
+        .cube {
             width: 300px;
             height: 300px;
             position: relative;
@@ -37,7 +37,7 @@
             align-items: center;
         }
 
-        .wrapper path {
+        .cube path {
             stroke-dasharray: 54;
             stroke-dashoffset: 54;
             transition: 2s;
@@ -45,7 +45,7 @@
             stroke-width: 1;
         }
 
-        .wrapper path.like {
+        .cube path.like {
             animation: like 1s linear forwards,
             heart-beat 0.5s ease-in-out 1s 2;
             transform-origin: center;
@@ -78,7 +78,7 @@
             }
         }
 
-        .wrapper path.unlike {
+        .cube path.unlike {
             animation: unlike 1s linear forwards;
         }
 

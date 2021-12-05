@@ -32,7 +32,7 @@
             /*perspective-origin: bottom right;*/
         }
 
-        .wrapper {
+        .cube {
             width: 300px;
             height: 200px;
             position: relative;
@@ -53,11 +53,11 @@
             }
         }
 
-        .wrapper:hover {
+        .cube:hover {
             transform: rotateX(-60deg) rotateY(60deg);
         }
 
-        .wrapper div {
+        .cube div {
             width: 100%;
             height: 100%;
             background-color: var(--color1);
@@ -72,42 +72,42 @@
             letter-spacing: .2em;
         }
 
-        .wrapper .top, .wrapper .bottom {
+        .cube .top, .cube .bottom {
             width: 300px;
             height: 100px;
         }
 
-        .wrapper .left, .wrapper .right {
+        .cube .left, .cube .right {
             width: 100px;
             height: 200px;
         }
 
-        .wrapper .top {
+        .cube .top {
             transform: rotateX(90deg) translateZ(100px);
             background-color: var(--color2);
         }
 
-        .wrapper .bottom {
+        .cube .bottom {
             transform: rotateX(-90deg) translateZ(100px);
             background-color: var(--color3);
         }
 
-        .wrapper .left {
+        .cube .left {
             transform: rotateY(-90deg) translateZ(150px);
             background-color: var(--color4);
         }
 
-        .wrapper .right {
+        .cube .right {
             transform: rotateY(90deg) translateZ(150px);
             background-color: var(--color5);
         }
 
-        .wrapper .front {
+        .cube .front {
             transform: translateZ(50px);
             background-color: var(--color6);
         }
 
-        .wrapper .back {
+        .cube .back {
             transform: rotateY(0.5turn) translateZ(50px);
             background-color: var(--color7);
         }

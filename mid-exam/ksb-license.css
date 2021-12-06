@@ -38,10 +38,11 @@ body {
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
+    margin-bottom: 30px;
 }
 
 .inner:hover{
-    animation: turn 5s linear infinite;
+    animation: turn 10s linear infinite;
 }
 
 @keyframes turn {

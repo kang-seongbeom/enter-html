@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        header {
+            width: 960px;
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 1px solid #000;
+        }
+
+        article {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        #content {
+            width: 600px;
+            height: 400px;
+            background-color: #ffd800;
+            padding: 15px;
+        }
+
+        #side {
+            width: 300px;
+            height: 400px;
+            background-color: #00ff90;
+            padding: 15px;
+        }
+
+        footer {
+            width: 960px;
+            height: 120px;
+            background-color: #c3590a;
+        }
+
+        @media screen and (max-width: 1025px) {
+            #content {
+                width: 450px;
+            }
+
+            #side {
+                width: 450px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                width: 450px;
+            }
+
+            article {
+                flex-direction: column;
+            }
+
+            #content {
+                padding: 0;
+            }
+
+            #side {
+                padding: 0;
+            }
+
+            footer {
+                width: 450px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+</header>
+<article>
+    <div id="content">
+        본문
+    </div>
+    <div id="side">
+        사이드바
+    </div>
+</article>
+<footer>
+    푸터
+</footer>
+</body>
+</html>

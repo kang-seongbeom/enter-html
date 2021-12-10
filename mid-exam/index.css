@@ -89,6 +89,11 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     animation: nav-slide-UtD 1.0s linear forwards;
+    overflow: scroll;
+}
+
+#nav::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes nav-slide-UtD {

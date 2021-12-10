@@ -21,6 +21,10 @@ body {
     background-size: cover;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .cube {
     margin-top: 70px;
     display: flex;

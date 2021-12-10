@@ -415,7 +415,7 @@ a {
 
     #nav {
         width: 0;
-        min-height: 150px;
+        min-height: 170px;
         flex-direction: row;
         animation: nav-slide-LtR 1.0s linear forwards;
     }
@@ -443,5 +443,17 @@ a {
         to {
             height: 99%;
         }
+    }
+}
+
+@media screen and (max-width:643px) {
+    #nav{
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #nav{
+        min-height: 280px;
     }
 }

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,25 +14,26 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.list{
+.list {
     margin-bottom: 15px;
 }
-p{
+
+p {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-ul{
+ul {
     list-style: circle;
 }
 
-li{
+li {
     margin-left: 40px;
     padding: 2px;
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
     color: red;
 }
